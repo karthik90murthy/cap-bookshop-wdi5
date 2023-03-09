@@ -3,7 +3,7 @@ const NewBookPage = require("../pageobjects/newBook.page");
 
 describe("Manage bookshop", () => {
   let bookTitle = "How to cook Pancakes";
-  it("create a new book", async () => {
+  it("create a new book check", async () => {
     await ManageBooksPage.iClickOnCreateNewBook();
     await NewBookPage.iEnterTitle(bookTitle);
     await NewBookPage.iSelectGenre();
